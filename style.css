@@ -1,0 +1,19 @@
+body {
+    font-size: medium;
+    background-color: #75d3eb;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.imagem {
+    image-rendering: auto;
+    text-align: center;
+}
+
+#GRUPO-1 {
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+}
