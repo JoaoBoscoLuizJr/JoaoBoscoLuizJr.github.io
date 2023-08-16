@@ -1,7 +1,14 @@
+h2{
+    text-align: left;
+}
+
 body {
     font-size: medium;
-    background-color: #75d3eb;
+    background-color: #45c5ba;
+    border: 50px;
 }
+
+
 
 .subtitulo {
     text-align: center;
@@ -9,11 +16,13 @@ body {
 
 .imagem {
     image-rendering: auto;
-    text-align: center;
+    text-align: left;
+
 }
 
 #GRUPO-1 {
     color: aliceblue;
-    text-align: center;
+    text-align: start;
     width: 100%;
+
 }
