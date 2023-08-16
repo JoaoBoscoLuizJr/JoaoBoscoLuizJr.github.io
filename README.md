@@ -16,4 +16,4 @@ Criei esse site para colocar em pratica meus aprendizados de HTML e CSS
 
 ## O que tem no meu site ?
 
-no meu site tem algumas das minhas informações como nome, idade, cidade, redes sociais, hobbies e meus interesses para que no futuro seja como um currículo 
+no meu site tem algumas das minhas informações como nome, idade, cidade, redes sociais, hobbies e meus interesses para que no futuro seja como um currículo
