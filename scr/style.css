@@ -1,5 +1,11 @@
-h2{
-    text-align: left;
+h2 {
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+
+    color: rgb(0, 133, 250)
 }
 
 body {
@@ -16,13 +22,13 @@ body {
 
 .imagem {
     image-rendering: auto;
-    text-align: left;
+    text-align: center;
 
 }
 
 #GRUPO-1 {
     color: aliceblue;
-    text-align: start;
+    text-align: center;
     width: 100%;
 
 }
