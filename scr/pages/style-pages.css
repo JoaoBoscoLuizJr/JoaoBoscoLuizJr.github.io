@@ -1,9 +1,24 @@
-h1{
+h1 {
     text-align: center;
     color: goldenrod;
 }
 
-body{
-    font-size: medium;
-    background-image:none
+h4{
+    color: black;
 }
+
+body {
+    font-size: 25px;
+    background-color: #777474;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    bottom: blue;
+
+}
+
