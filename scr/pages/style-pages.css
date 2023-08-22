@@ -1,24 +1,41 @@
 h1 {
     text-align: center;
-    color: goldenrod;
+    color: rgb(218, 165, 32);
 }
 
 h4{
-    color: black;
+    color: #000000;
+    text-align: center;
 }
 
 body {
     font-size: 25px;
     background-color: #777474;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
-
 a{
-    color: white;
     text-decoration: none;
-    bottom: blue;
+    color: white;
+    display:contents;
+}
+a:hover{
+    color: blue;
 
 }
+
+div{
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    border-style: ridge;
+    border-color: black;
+}
+
 
