@@ -1,23 +1,36 @@
-# Site portfólio João Bosco Júnior
+# Hi I'm [João Júnior](https://victorluansilva.com/) 🐱‍👤
 
-Neste repositório você encontrara arquivos fontes do meu site
+#### :arrow_forward:  I take an T.I course at [SENAI](https://www.fiemg.com.br/senai/unidades/senai-sao-goncalo-do-rio-abaixo-cfp-jose-fernando-coura/) and student
 
-## Para que finalidade criei esse site ?  
+#### :arrow_forward: Living at **São Gonçalo do Rio Abaixo** :city_sunrise:
 
-Criei esse repositório para backup caso ocorra algum erro com o sistema do Senai, apagão na cidade ou desligamento do computador 
+##
 
-## Quem você almeja ver esse site ?
+<div align="left">
+  <a href="https://www.linkedin.com/in/victor-luan-silva/" target="_blank"><img src="src/images/logoLinkedIn.png" width="80px" height="20px" /></a>
+    <a href = "joaoboscoluizjunior404@gmail.com" target="_blank"><img src="src/images/logoGmail.png" width="80px" height="20px" /></a>
+</div>
 
-Empresas do ramo de T.I 
+##
 
-## Porque criei esse site ?
+<div align="center">
+  <a href="https://victorluansilva.com/" target="_blank">
+  <img width="350em" height="180em" src="src/images/webSiteMiniature.png"/>
+  </a>
+  <a href="https://github.com/victorluansilva" target="_blank">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JoaoBoscoLuizJr&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true"/>
+  </a>
+</div>
 
-Criei esse site para colocar em pratica meus aprendizados de HTML e CSS
+##
 
-## O que tem no meu site ?
+### _My Repos_
 
-no meu site tem algumas das minhas informações como nome, idade, cidade, redes sociais, hobbies e meus interesses para que no futuro seja como um currículo
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=JoaoBoscoLuizJr&repo=Projetos_APP_Inventor)](https://github.com/JoaoBoscoLuizJr/Projetos_APP_Inventor)
 
-## Quais as futuras modificações/adições você planeja realizar no seu site?
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=JoaoBoscoLuizJr&repo=Livros)](https://github.com/JoaoBoscoLuizJr/Livros)
+ 
+  
+##
 
-Cursos, Faculdades, novos interesses etc.
+ ![Snake animation](https://github.com/JoaoBoscoLuizJr/JoaoBoscoLuizJr/blob/output/github-contribution-grid-snake.svg)
