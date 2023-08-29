@@ -7,7 +7,7 @@
 ##
 
 <div align="left">
-  <a href="https://www.linkedin.com/in/João-Jr/" target="_blank"><img src="../Portifolio_Site_JoaoBosco/scr/images/logo do linkdin.svg" width="100px" height="80px" /></a>
+  <a href="https://www.linkedin.com/in/JOAO-BOSCO-LUIZ-JUNIOR/" target="_blank"><img src="../Portifolio_Site_JoaoBosco/scr/images/logo do linkdin.svg" width="100px" height="80px" /></a>
     <a href = "joaoboscoluizjunior404@gmail.com" target="_blank"><img src="../Portifolio_Site_JoaoBosco/scr/images/logo do gmail.svg" width="100px" height="80px" /></a>
     <a href = "https://www.instagram.com/joaoboscojr_" target="_blank"><img src="../Portifolio_Site_JoaoBosco/scr/images/logo do insta.svg"width="100px" height="80px" />
 </div>
