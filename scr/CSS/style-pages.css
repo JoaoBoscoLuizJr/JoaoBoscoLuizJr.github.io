@@ -29,7 +29,7 @@ header {
     margin-bottom: 50px;
 }
 
-/* body {
+body {
     text-align: center;
     font-size: 25px;
     background-color: #f5f5dc;
@@ -40,7 +40,7 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
 
-} */
+}
 
 a {
     text-decoration: none;
@@ -51,34 +51,34 @@ a {
 a:hover {
     color: rgb(0, 0, 0);
 
-} */
+} 
 
-/* div {
+div { 
     padding-top: 25px;
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 75px;
     border-style: ridge;
     border-color: black;
-} */
+} 
 
 
-/* #Texto {
+#Texto {
     color: black;
-    font-family: Arial; */
-/* } */
+    font-family: Arial;
+ }
 
-/* header {
+header {
     text-align: center;
     color: #000000;
-    border: 3px solid black;
+    border: 5px solid black;
     
 
 
 
-} */
+}
 
-/* #sec1 {
+#sec1 {
     text-align: left;
     margin: auto;
     border-radius: 5px;
@@ -99,9 +99,9 @@ a:hover {
     padding: 15px;
 
 
-} */
+} 
 
-/* section {
+section {
     color: #000000;
     margin: 50px;
     border: 3px solid black;
@@ -132,7 +132,7 @@ section ul {
     text-align: left;
     margin-top: 20px;
     font-size: 20px;
-} */
+}
 
 .titilo-music{
     text-align: center;
@@ -194,7 +194,7 @@ section ul {
 }
 
 .black-ground{
-    background-color: #F0F8FF	;
+    background-color: #5f6264	;
     color: rgb(0, 0, 0);
   }
 
@@ -216,4 +216,7 @@ section ul {
     border: none;
 }
 
-
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 230px;
+}
