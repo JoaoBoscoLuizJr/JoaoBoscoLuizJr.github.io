@@ -16,7 +16,7 @@
     <header class="card">
         <nav class="nav-items">
             <a class="button to-left" href="#inicio"><strong><img
-                        src="./images/9bf4d2d5b2d942b5af7dbc4e48560941.png"></a>
+                        src="../JoaoBoscoLuizJr.github.io/scr/images/Logo.jpg"></a>
             <a class="button to-right padding-large" href="#sobre">SOBRE</a>
             <a class="button to-right padding-large" href="#projetos">PROJETOS</a>
             <a class="button to-right padding-large" href="#artigos">ARTIGOS</a>
@@ -50,23 +50,32 @@
         </section>
         <section id="artigos" class="container content center padding-64">
             <h2 class="wide">ARTIGOS</h2>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-item active">
                         <div class="card-container">
                             <div class="cardBox">
                                 <h2>Top 5 músicas</h2>
                                 <p>As melhores músicas, na minha opnião.</p>
                                 <a class="btn-card" type="button"
-                                    href="../JoaoBoscoLuizJr.github.io/scr/pages/Top-5-musicas.html"
-                                    target="_blank">Leia Mais</a>
+                                    href="../JoaoBoscoLuizJr.github.io/scr/pages/Top-5-musicas.html" target="_blank"
+                                    class="d-block w-100">Leia Mais</a>
                             </div>
-                            <div class="carousel-item" data-bs-interval="2000">
+                            <div class="carousel-item">
                                 <div class="cardBox">
                                     <h2>Artigos</h2>
                                     <p>Meus Artigos.</p>
                                     <a class="btn-card" type="button"
-                                        href="../JoaoBoscoLuizJr.github.io/scr/pages/Artigos.html" target="_blank">Leia
+                                        href="../JoaoBoscoLuizJr.github.io/scr/pages/Artigos.html" target="_blank"
+                                        class="d-block w-100">Leia
                                         Mais</a>
                                 </div>
                                 <div class="carousel-item">
@@ -74,16 +83,16 @@
                                         <h2>Realizações acadêmicas</h2>
                                         <p>Passeios, visitas téncnicas e outros.</p>
                                         <a class="btn-card" type="button" href="./pages/realizaçoes-academicas.html"
-                                            target="_blank">Leia Mais</a>
+                                            target="_blank" class="d-block w-100">Leia Mais</a>
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
                                 <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
