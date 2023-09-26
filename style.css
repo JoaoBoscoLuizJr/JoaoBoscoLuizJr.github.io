@@ -31,6 +31,7 @@ nav a:hover {
 .button {
     text-align: center;
     white-space: normal;
+    color: black;
 }
 .nav-items {
     padding: 8px 16px;
@@ -51,7 +52,7 @@ nav a:hover {
 .padding-large {
     padding: 12px 24px !important;
 }
-.content {
+.content-vls {
     margin-left: auto;
     margin-right: auto;
     max-width: 2000px;
@@ -159,4 +160,12 @@ section{
     gap: 20px;
     justify-content: center;
     align-items: center;
+  }
+
+  .carousel-vls{
+    image-resolution:inherit;
+    border-image-width: 50px;
+    height: 500px;
+    width: 900px;
+    text-align-last: center;
   }
