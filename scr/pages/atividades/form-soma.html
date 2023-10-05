@@ -10,11 +10,29 @@
 </head>
 
 <body>
-    <label for="title">Digite sua idade</label>
+    <label for="title"><b>Idade</b></label><br>
     <input type="number" id="idade">
     <button onclick="compIdade()">Salvar</button>
 
-    <p id="result"></p>
+    <p id="resultIdade"></p>
+
+    <label for="number1"><b>Numero A</b></label><br>
+    <input type="number" id="number1"> <br>   
+    <label for="number2"><b>Numero B</b></label><br>
+    <input type="number" id="number2">
+    <button onclick="compNumbers">Comparar</button><br>
+
+    <p id="resultComp"></p>
+
+    <label for="numero1"><b>Valor A</b></label><br>
+    <input type="number" id="numero1"> <br>
+    <label for="numero2"><b>Valor B</b></label><br>  
+    <input type="number" id="numero2">
+    <button onclick="compNumbers">Ver se é divisor</button>
+
+    <p id="resultDiv"></p>
+
+    
 
     <script>
         let idoso = 60;
@@ -24,7 +42,7 @@
 
         function compIdade() {
             let idade = document.getElementById('idade').value;
-            let resultado = document.getElementById('result');
+            let resultado = document.getElementById('resultIdade');
 
             if (idade >= idoso){
                 resultado.innerText = idade + " e um idoso"
@@ -36,21 +54,12 @@
                 resultado.innerText = idade + " Você e menor de idade"
 
             }
-        }      
-    </script>
-    <label for="title">Digite dois números para compará-los</label>
-    <input type="number" id="number1">    
-    <input type="number" id="number2">
-    <button onclick="compNumbers">Comparar</button>
-    <p id="resultado"></p>
-
-    <P></P>
-    <script>
+        } 
 
         function compNumbers(){
-            let number1 = document.getElementById('number1').value;
-            let number2 = document.getElementById('number2').value;
-            let result = document.getElementById('resultado');
+            let number1 = parseInt (document.getElementById('number1').value)
+            let number2 = parseInt (document.getElementById('number2').value)
+            let result = document.getElementById('resultComp');
 
             if (number1 > number2) {
                 result.innerText = number1 + " E maior que " + number2
@@ -67,9 +76,21 @@
             
         }
 
+        function compNumbers(){
+            let numero1 = parseInt (document.getElementById('numero1').value)
+            let numero2 = parseInt (document.getElementById('numero2').value)
+            let result = document.getElementById('resultDiv');
+
+            if (numero1 % numero2 == 0) {
+                result.innerText = numero1 + " É divisível por " + numero2
+                
+            } else {
+                result.innerText = numero1 + " Não é divisível por " + numero2
+            }
 
 
-
+            
+        }
 
 
     </script>    
