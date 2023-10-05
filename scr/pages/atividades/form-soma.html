@@ -109,11 +109,11 @@
         }
 
         function temp() {
-            let temp = document.getElementById('tempo').value;
+            let temp = parseInt (document.getElementById('tempo').value)
             let resultTemp = document.getElementById('resultTemp');
 
             if (temp < 20) {
-                resultTemp.innerText = "O clima esta frio"
+                document.getElementById('resultTemp').innerText = "O clima esta frio"
 
             } else if (temp > 20 && 25) {
                 resultTemp.innerText = "O clima esta agradável"
