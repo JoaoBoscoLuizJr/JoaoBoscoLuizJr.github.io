@@ -11,24 +11,24 @@
 
 <body>
     <label for="title"><b>Idade</b></label><br>
-    <input type="number" id="idade">
+    <input type="text" id="idade">
     <button onclick="compIdade()">Salvar</button>
 
     <p id="resultIdade"></p>
 
     <label for="number1"><b>Numero A</b></label><br>
-    <input type="number" id="number1"> <br>   
+    <input type="text" id="number1"> <br>   
     <label for="number2"><b>Numero B</b></label><br>
-    <input type="number" id="number2">
+    <input type="text" id="number2">
     <button onclick="compNumbers">Comparar</button><br>
 
     <p id="resultComp"></p>
 
     <label for="numero1"><b>Valor A</b></label><br>
-    <input type="number" id="numero1"> <br>
+    <input type="text" id="numero1"> <br>
     <label for="numero2"><b>Valor B</b></label><br>  
-    <input type="number" id="numero2">
-    <button onclick="compNumbers">Ver se é divisor</button>
+    <input type="text" id="numero2">
+    <button onclick="divNumbers">Ver se é divisor</button>
 
     <p id="resultDiv"></p>
 
@@ -76,7 +76,7 @@
             
         }
 
-        function compNumbers(){
+        function divNumbers(){
             let numero1 = parseInt (document.getElementById('numero1').value)
             let numero2 = parseInt (document.getElementById('numero2').value)
             let result = document.getElementById('resultDiv');
