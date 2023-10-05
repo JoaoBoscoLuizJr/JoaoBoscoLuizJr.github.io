@@ -17,7 +17,7 @@
     <p id="resultIdade"></p>
 
     <label for="number1"><b>Numero A</b></label><br>
-    <input type="text" id="number1"> <br>   
+    <input type="text" id="number1"> <br>
     <label for="number2"><b>Numero B</b></label><br>
     <input type="text" id="number2">
     <button onclick="compNumbers">Comparar</button><br>
@@ -26,13 +26,29 @@
 
     <label for="numero1"><b>Valor A</b></label><br>
     <input type="text" id="numero1"> <br>
-    <label for="numero2"><b>Valor B</b></label><br>  
+    <label for="numero2"><b>Valor B</b></label><br>
     <input type="text" id="numero2">
     <button onclick="divNumbers">Ver se é divisor</button>
 
     <p id="resultDiv"></p>
 
-    
+    <label for="materia B"><b>Temperatura</b></label><br>
+    <input type="text" id="tempo">
+    <button onclick="temp">Como esta o clima</button>
+
+    <p id="resultTemp"></p>
+
+    <label for="materia A"><b>Matéria A</b></label><br>
+    <input type="text" id="materia A"><br>
+    <label for="materia B"><b>Matéria B</b></label><br>
+    <input type="text" id="materia B"><br>
+    <label for="materia C"><b>Matéria c</b></label><br>
+    <input type="text" id="materia C">
+    <button onclick="boletim">Resultado</button>
+
+    <p id="resultMateria"></p>
+
+
 
     <script>
         let idoso = 60;
@@ -44,56 +60,98 @@
             let idade = document.getElementById('idade').value;
             let resultado = document.getElementById('resultIdade');
 
-            if (idade >= idoso){
-                resultado.innerText = idade + " e um idoso"
+            if (idade >= idoso) {
+                document.getElementById('resultIdade').innerText = idade + "Você é menor de idade"
 
-            }else if (idade > adulto){
-                resultado.innerText = idade + " Você e um adulto"
+            } else if (idade > adulto) {
+                document.getElementById('resultIdade').innerText = idade + " Você e um adulto"
 
-            }else if (idade <= 17){
-                resultado.innerText = idade + " Você e menor de idade"
+            } else if (idade <= 17) {
+                document.getElementById('resultIdade').innerText = idade + " Você e menor de idade"
 
             }
-        } 
+        }
 
-        function compNumbers(){
+        function compNumbers() {
             let number1 = parseInt (document.getElementById('number1').value)
             let number2 = parseInt (document.getElementById('number2').value)
             let result = document.getElementById('resultComp');
 
             if (number1 > number2) {
-                result.innerText = number1 + " E maior que " + number2
-                
+                document.getElementById('resultComp').innerText = number1 + " E maior que " + number2
+
             } else if (number1 < number2) {
-                result.innerText = number2 + " E maior que " + number1
-                
-            }else if (number1 = number2){
-                result.innerText = number1 + " E igual a  " + number2
+                document.getElementById('resultComp').innerText = number2 + " E maior que " + number1
+
+            } else if (number1 = number2) {
+                document.getElementById('resultComp').innerText = number1 + " E igual a  " + number2
 
             }
 
 
-            
+
         }
 
-        function divNumbers(){
-            let numero1 = parseInt (document.getElementById('numero1').value)
-            let numero2 = parseInt (document.getElementById('numero2').value)
+        function divNumbers() {
+            let numero1 = parseInt(document.getElementById('numero1').value)
+            let numero2 = parseInt(document.getElementById('numero2').value)
             let result = document.getElementById('resultDiv');
 
             if (numero1 % numero2 == 0) {
                 result.innerText = numero1 + " É divisível por " + numero2
-                
+
             } else {
                 result.innerText = numero1 + " Não é divisível por " + numero2
             }
 
 
-            
+
+        }
+
+        function temp() {
+            let temp = document.getElementById('tempo').value;
+            let resultTemp = document.getElementById('resultTemp');
+
+            if (temp < 20) {
+                resultTemp.innerText = "O clima esta frio"
+
+            } else if (temp > 20 && 25) {
+                resultTemp.innerText = "O clima esta agradável"
+
+            } else if (temp > 25) {
+                resultTemp.innerText = "O clima quente"
+
+            }
+
+
+
+
+        } 
+
+        function boletim() {
+            let MatériaA = document.getElementById('materia A').value;
+            let MatériaB = document.getElementById('materia B').value;
+            let MatériaC = document.getElementById('materia C').value;
+            let resultMateria = document.getElementById('resultMateria');
+
+            if (MatériaA, MatériaB, MatériaC < 60) {
+                resultTemp.innerText = "Você foi reprovado"
+
+            } else if (MatériaA, MatériaB, MatériaC >= 60) {
+                resultTemp.innerText = "Você foi aprovado"
+
+
+            }
+
+
+
+
         }
 
 
-    </script>    
+
+
+    </script>
 </body>
 
 </html>
