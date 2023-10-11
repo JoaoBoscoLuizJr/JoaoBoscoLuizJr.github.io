@@ -261,28 +261,40 @@
     <!-- FIM ATIVIDADE 6 -->
 
     <!-- ATIVIDADE 7 -->
-    <label for=""><b>Digite um numero</b></label><br>
-    <input type="text" id="cont">
-    <button onclick="regressivo">Contar</button>
+    <label for="contNumero"><b>Digite um numero</b></label><br>
+    <input type="text" id="contNumero">
+    <button onclick="regressivo()">Regressar</button>
 
     <p id="resultCont"></p>
     <script>
 
         function regressivo(){
-            let contador = parseInt(document.getElementById('cont').value)
-            resultCont.innerText = regressao(contador);
-
-
-        }
-
-        function regressao(){
-            for (i=cont;i!=cont;i--){
-                
-                
+            let valor = contNumero.value;
+            let result ="";
+            for (let i = 0; i <= valor; i++){
+                result += (valor - i) + "\n"
             }
-
+            resultCont.innerText = result;
         }
-        
+    </script>
+    <!-- FIM ATIVIDADE 7 -->
+
+    <!-- ATIVIDADE 8 -->
+    <label for=""><b>Tabuada</b></label><br>
+    <input type="text" id="tabuada">
+    <button onclick="tabuada()">Tabuar</button>
+
+    <p id="resultTabu"></p>
+
+    <script>
+        function tabuada(){
+            let valor = `TABUADA DO  ${tabuada.value} \n`;
+            for (let i = 0; i <= 10; i++){
+                valor += `${tabuada.value} x ${i} = ${tabuada.value * i} \n`
+            }
+            resultTabu.innerText = valor;
+        }
+
 
 
 
