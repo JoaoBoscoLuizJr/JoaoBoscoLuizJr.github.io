@@ -17,46 +17,48 @@
 
 </head>
 
-<body class="">
-    <main class="card">
-        <div>
-            <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                    aria-describedby="addon-wrapping">
-            </div>
-            <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control" placeholder="Escola/Instituição" aria-label="Escola/Instituição"
-                    aria-describedby="addon-wrapping">
-            </div>
-            <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control" placeholder="Curso" aria-label="Curso"
-                    aria-describedby="addon-wrapping">
+<body>
+    <main class="content-vls container-fluid">
+        <div class="card p-3 border col-4 w-25">
+            <div class="row grid gap-0 column-gap-3 inline-block">
+                <div class="input-group flex-nowrap input-group mb-3 ">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap input-group mb-3 ">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-school"></i></span>
+                    <input type="text" class="form-control" placeholder="Escola/Instituição"
+                        aria-label="Escola/Instituição" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap input-group mb-3">
+                    <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-book"></i></span>
+                    <input type="text" class="form-control" placeholder="Curso" aria-label="Curso"
+                        aria-describedby="addon-wrapping">
+                </div>
             </div>
     </main>
-    <div class="">
-        <select aria-label="Default select example">
-            <option selected>Materias</option>
-            <option value="1">Português</option>
-            <option value="2">Matemática</option>
-            <option value="3">Física</option>
-            <option value="4">Historia</option>
-            <option value="5">Biologia</option>
-            <option value="6">Educação Física</option>
-        </select><br><br>
-        <span><b>1º Bimestre</b></span><br>
-        <input type="number"><br><br>
-        <span><b>2º Bimestre</b></span><br>
-        <input type="number"><br><br>
-        <span><b>3º Bimestre</b></span><br>
-        <input type="number"><br><br>
-        <span><b>4º Bimestre</b></span><br>
-        <input type="number">
-        <button type="button" onclick="salve()">Salvar</button>
-
-
+    <div class="content-vls container-fluid col-4 w-25 border card">
+        <div class="row mb-3 px-4 ">
+            <select aria-label="Default select example">
+                <option selected>Materias</option>
+                <option value="1">Português</option>
+                <option value="2">Matemática</option>
+                <option value="3">Física</option>
+                <option value="4">Historia</option>
+                <option value="5">Biologia</option>
+                <option value="6">Educação Física</option>
+            </select><br><br>
+            <span><b>1º Bimestre</b></span><br>
+            <input type="number"><br><br>
+            <span><b>2º Bimestre</b></span><br>
+            <input type="number"><br><br>
+            <span><b>3º Bimestre</b></span><br>
+            <input type="number"><br><br>
+            <span><b>4º Bimestre</b></span><br>
+            <input type="number">
+            <button type="button" onclick="salve()">Salvar</button>
+        </div>
     </div>
 
 </body>
