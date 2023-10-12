@@ -3,55 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
     <link rel="stylesheet" href="script-Boletim.js">
-    <link rel="stylesheet" href="../../../Bootstrap/css_bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
+
+
+
+        ">
+    <!-- <link rel="stylesheet" href="../../../Bootstrap/css_bootstrap.min.css"> -->
 
 </head>
 
-<body>
-    <div class="Card">
-        <div class="input-group">
-            <span class="input-group-text">Nome do aluno</span>
-            <input type="text" aria-label="name" class="form-control">
-        </div><br>
-        <div class="input-group">
-            <span class="input-group-text">Escola/Instituição</span>
-            <input type="text" aria-label="Escola" class="form-control">
-        </div><br>
-        <div class="input-group">
-            <span class="input-group-text">Curso</span>
-            <input type="text" aria-label="Curso" class="form-control">
-        </div><br>
+<body class="">
+    <main class="card">
+        <div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="text" class="form-control" placeholder="Escola/Instituição" aria-label="Escola/Instituição"
+                    aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="text" class="form-control" placeholder="Curso" aria-label="Curso"
+                    aria-describedby="addon-wrapping">
+            </div>
+    </main>
+    <div class="">
+        <select aria-label="Default select example">
+            <option selected>Materias</option>
+            <option value="1">Português</option>
+            <option value="2">Matemática</option>
+            <option value="3">Física</option>
+            <option value="4">Historia</option>
+            <option value="5">Biologia</option>
+            <option value="6">Educação Física</option>
+        </select><br><br>
+        <span><b>1º Bimestre</b></span><br>
+        <input type="number"><br><br>
+        <span><b>2º Bimestre</b></span><br>
+        <input type="number"><br><br>
+        <span><b>3º Bimestre</b></span><br>
+        <input type="number"><br><br>
+        <span><b>4º Bimestre</b></span><br>
+        <input type="number">
+        <button type="button" onclick="salve()">Salvar</button>
+
+
     </div>
-    <div class="dropdown">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Materias
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Português</a></li>
-                <li><a class="dropdown-item" href="#">Matemática</a></li>
-                <li><a class="dropdown-item" href="#">Física</a></li>
-                <li><a class="dropdown-item" href="#">Biologia</a></li>
-                <li><a class="dropdown-item" href="#">Historia</a></li>
-                <li><a class="dropdown-item" href="#">Educação Física</a></li>
-            </ul>
-        </div>
-        <script src="script-Boletim.js">
-            function save() {
 
-            }
-
-
-
-
-
-
-
-        </script>
 </body>
 
 </html>
