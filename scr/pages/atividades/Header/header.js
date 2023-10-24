@@ -45,9 +45,9 @@ function  header () {
 </header>  `
 }
 function footer() {
-    footerElement.innerHTML = `<footer class=" fixed-bottom  mt-4 text-center bg-black"> João Bosco</footer> `
+    footerElement.innerHTML = `<footer class=" fixed-bottom  mt-4 text-center bg-white"> João Bosco</footer> `
 }
 
 
-header()
-footer()
+header();
+footer();
