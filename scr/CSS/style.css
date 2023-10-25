@@ -119,7 +119,7 @@ h2 {
     padding-bottom: 32px !important;
   }
 
-  img{
+  .img{
     padding-bottom: 25px;
     width: 40px;
     height: auto;
@@ -152,16 +152,17 @@ section{
   }
 
   .cardBox {
+    
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
-    max-width:300px;
-    max-height: 200px;
-    text-align: center;
-    flex-shrink: 1;
+    padding: 40px;
+    width:auto;
+    height:auto;
+    max-width:fit-content;
+    max-height: 300px;
+    text-align: right;    
+    flex-shrink:initial;
   }
 
 
@@ -197,3 +198,6 @@ section{
     font-size: 1.7em;
   }
 
+  #circle{
+    border-radius: 50%;
+  }
