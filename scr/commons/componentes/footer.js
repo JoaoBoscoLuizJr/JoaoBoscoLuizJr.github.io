@@ -1,4 +1,7 @@
-function footer() {
-    footerElement.innerHTML = `<footer class=" fixed-bottom  mt-4 text-center bg-white"> João Bosco</footer> `
+function footer(){
+    footerElement.innerHTML=` <footer class=" center">
+    <p class="center opacity wide">By João Bosco Júnior</p>
+</footer>`
 }
 footer();
+export {footer}
