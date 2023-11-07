@@ -4,6 +4,7 @@ import { Usuario } from "./model/usuario.model.js";
 let data = [];
 const submitType = { NEW: 0, UPDATE: 1 }
 let submitState = submitType.NEW;
+let currentId = null;
 
 const handleSubimit = (event) => {
   event.preventDefault();
@@ -14,7 +15,9 @@ const handleSubimit = (event) => {
     addUser(user);
 
   } else if (submitState == submitType.UPDATE) {
-
+    updateUser(currentId, user);
+    submitState = submitType.NEW;
+    btnSub.innerText = "NEW";
   }
   viewController.update(data, new Usuario("", null, "", ""));
 }
@@ -24,8 +27,11 @@ const addUser = (newUser) => {
 }
 
 const clickEsquerdo = (event) => {
-  const currentId = event.target.closest('tr').id.split("")[4];
-  alert(`Clicou com o botão direito, e o ${data[currentId].getNome().toUpperCase()} será carregado para edição`)
+  currentId = event.target.closest('tr').id.split("")[4];
+  alert(`Clicou com o botão direito, e o ${data[currentId].getNome().toUpperCase()} será carregado para edição`);
+  viewController.updateForm(data[currentId]);
+  submitState = submitType.UPDATE;
+  btnSub.innerText = "Update";
 
 }
 
@@ -37,12 +43,12 @@ const clickDireito = (event) => {
   }
 }
 
-const updateUser = (index, userToUpdate) =>{
+const updateUser = (index, userToUpdate) => {
   data[index] = userToUpdate;
 }
 
-const deletUser = (index)=>{
-  data.splice(index,1)
+const deletUser = (index) => {
+  data.splice(index, 1)
 }
 
 const controller = {
