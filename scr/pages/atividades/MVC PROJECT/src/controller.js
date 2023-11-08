@@ -17,7 +17,7 @@ const handleSubimit = (event) => {
   } else if (submitState == submitType.UPDATE) {
     updateUser(currentId, user);
     submitState = submitType.NEW;
-    btnSub.innerText = "NEW";
+    btnSub.innerText = "Salvar";
   }
   viewController.update(data, new Usuario("", null, "", ""));
 }
@@ -37,10 +37,12 @@ const clickEsquerdo = (event) => {
 
 const clickDireito = (event) => {
   event.preventDefault();
-  const currentId = event.target.closest('tr').id.split("")[4];
+  currentId = event.target.closest('tr').id.split("")[4];
   if (event.button == 2) {
     alert(`Clicou com o botão direito, e o ${data[currentId].getNome().toUpperCase()} será deletado`)
   }
+  
+  
 }
 
 const updateUser = (index, userToUpdate) => {
@@ -49,6 +51,7 @@ const updateUser = (index, userToUpdate) => {
 
 const deletUser = (index) => {
   data.splice(index, 1)
+  
 }
 
 const controller = {
