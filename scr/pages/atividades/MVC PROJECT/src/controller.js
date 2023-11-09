@@ -33,16 +33,29 @@ const clickEsquerdo = (event) => {
   submitState = submitType.UPDATE;
   btnSub.innerText = "Update";
 
+  const confirmUpdate = window.confirm("Você realmente deseja carregar a edição?")
+  
+  if (confirmUpdate){
+    updateUser(currentId)
+  }
+  viewController.update(data, new Usuario("", null, "", ""));
+
 }
 
 const clickDireito = (event) => {
   event.preventDefault();
   currentId = event.target.closest('tr').id.split("")[4];
   if (event.button == 2) {
-    alert(`Clicou com o botão direito, e o ${data[currentId].getNome().toUpperCase()} será deletado`)
+    alert(`Clicou com o botão direito, e o ${data[currentId].getNome().toUpperCase()} será deletado`);
+
+    const confirmDelet = window.confirm("Você realmente deseja deletar esse usuário?")
+    if (confirmDelet) {
+      deletUser(currentId)
+    }
+    viewController.update(data, new Usuario("", null, "", ""));
+
+
   }
-  
-  
 }
 
 const updateUser = (index, userToUpdate) => {
@@ -51,7 +64,7 @@ const updateUser = (index, userToUpdate) => {
 
 const deletUser = (index) => {
   data.splice(index, 1)
-  
+
 }
 
 const controller = {
