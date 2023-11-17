@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "João Bosco Júnior",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "fs": "^0.0.1-security"
+    "parcel":"2.10.3"
   }
 }
